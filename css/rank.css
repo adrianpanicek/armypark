@@ -1,0 +1,197 @@
+.rank {
+  background: url('../img/rank.png') no-repeat top left;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}
+.rank.text {
+  text-align: center;
+  background: none;
+  width: 100%;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.rank.lvl1 {
+  background-position: 0 0;
+}
+.rank.lvl2 {
+  background-position: -42px 0;
+}
+.rank.lvl3 {
+  background-position: -84px 0;
+}
+.rank.lvl4 {
+  background-position: -126px 0;
+}
+.rank.lvl5 {
+  background-position: -168px 0;
+}
+.rank.lvl6 {
+  background-position: -210px 0;
+}
+.rank.lvl7 {
+  background-position: -252px 0;
+}
+.rank.lvl8 {
+  background-position: -294px 0;
+}
+.rank.lvl9 {
+  background-position: -336px 0;
+}
+.rank.lvl10 {
+  background-position: -378px 0;
+}
+.rank.lvl11 {
+  background-position: -420px 0;
+}
+.rank.lvl12 {
+  background-position: -462px 0;
+}
+.rank.lvl13 {
+  background-position: -504px 0;
+}
+.rank.lvl14 {
+  background-position: -546px 0;
+}
+.rank.lvl15 {
+  background-position: -588px 0;
+}
+.rank.lvl16 {
+  background-position: -630px 0;
+}
+.rank.lvl17 {
+  background-position: -672px 0;
+}
+.rank.lvl18 {
+  background-position: -714px 0;
+}
+.rank.lvl19 {
+  background-position: -756px 0;
+}
+.rank.lvl20 {
+  background-position: -798px 0;
+}
+.rank.lvl21 {
+  background-position: -840px 0;
+}
+.rank.lvl22 {
+  background-position: -882px 0;
+}
+.rank.lvl23 {
+  background-position: -924px 0;
+}
+.rank.lvl24 {
+  background-position: -966px 0;
+}
+.rank.lvl25 {
+  background-position: -1008px 0;
+}
+.rank.lvl26 {
+  background-position: -1050px 0;
+}
+.rank.lvl27 {
+  background-position: -1092px 0;
+}
+.rank.lvl28 {
+  background-position: -1134px 0;
+}
+.rank.lvl29 {
+  background-position: -1176px 0;
+}
+.rank.lvl30 {
+  background-position: -1218px 0;
+}
+.rank.lvl31 {
+  background-position: -1260px 0;
+}
+.rank.lvl32 {
+  background-position: -1302px 0;
+}
+.rank.lvl33 {
+  background-position: -1344px 0;
+}
+.rank.lvl34 {
+  background-position: -1386px 0;
+}
+.rank.lvl35 {
+  background-position: -1428px 0;
+}
+.rank.lvl36 {
+  background-position: -1470px 0;
+}
+.rank.lvl37 {
+  background-position: -1512px 0;
+}
+.rank.lvl38 {
+  background-position: -1554px 0;
+}
+.rank.lvl39 {
+  background-position: -1596px 0;
+}
+.rank.lvl40 {
+  background-position: -1638px 0;
+}
+.rank.lvl41 {
+  background-position: -1680px 0;
+}
+.rank.lvl42 {
+  background-position: -1722px 0;
+}
+.rank.lvl43 {
+  background-position: -1764px 0;
+}
+.rank.lvl44 {
+  background-position: -1806px 0;
+}
+.rank.lvl45 {
+  background-position: -1848px 0;
+}
+.rank.lvl46 {
+  background-position: -1890px 0;
+}
+.rank.lvl47 {
+  background-position: -1932px 0;
+}
+.rank.lvl48 {
+  background-position: -1974px 0;
+}
+.rank.lvl49 {
+  background-position: -2016px 0;
+}
+.rank.lvl50 {
+  background-position: -2058px 0;
+}
+.rank.lvl51 {
+  background-position: -2100px 0;
+}
+.rank.lvl52 {
+  background-position: -2142px 0;
+}
+.rank.lvl53 {
+  background-position: -2184px 0;
+}
+.rank.lvl54 {
+  background-position: -2226px 0;
+}
+.rank.lvl55 {
+  background-position: -2268px 0;
+}
+.rank.lvl56 {
+  background-position: -2310px 0;
+}
+.rank.lvl57 {
+  background-position: -2352px 0;
+}
+.rank.lvl58 {
+  background-position: -2394px 0;
+}
+.rank.lvl59 {
+  background-position: -2436px 0;
+}
+.rank.lvl60 {
+  background-position: -2478px 0;
+}
+.rank.lvl-admin {
+  background-position: -2520px 0;
+}
