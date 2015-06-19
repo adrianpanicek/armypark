@@ -107,7 +107,19 @@ get_header();
 							<h3><a href="<?php echo $bookmark->link_url; ?>" class="title"><?php echo $bookmark->link_name; ?></a></h3>
 							<div class="description"><?php echo $bookmark->link_description; ?></div>
 						</div>
-					<?php
+					<?php } ?>
+					<h2>Widget</h2>
+					<?php 
+						$q = new WP_Query('cat='.$cat[$i]."&post_count=10");
+						if($q->have_posts()) {
+							while($q->have_posts()) {
+								$q->the_post();
+					?>
+
+					<a href>
+						<h5><a href><?php the_title() ?></a></h5>
+					</a>
+					<?php }
 						}
 					wp_reset_postdata();
 					?>
