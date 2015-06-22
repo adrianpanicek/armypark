@@ -1,50 +1,36 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<section class="col-sm-3">
-				<h2 class="section-title">CitronWeb</h2>
-				<ul class="nav">
-					<li><a href>Hlavná stránka</a></li>
-					<li><a href>O nás</a></li>
-					<li><a href>Kontakt</a></li>
-					<li><a href>Logo</a></li>
-				</ul>
-			</section>
-			<section class="col-sm-3">
-				<h2 class="section-title">CitronLab</h2>
-				<ul class="nav">
-					<li><a href>O projekte</a></li>
-					<li><a href>Archív článkov</a></li>
-					<li><a href>Tag Cloud</a></li>
-					<li><a href>RSS</a></li>
-				</ul>
-			</section>
-			<section class="col-sm-3">
-				<h2 class="section-title">Archív</h2>
-				<ul class="nav">
-					<li><a href>2015</a></li>
-					<li><a href>2016</a></li>
-					<li><a href>2017</a></li>
-					<li><a href>2018</a></li>
-				</ul>
-			</section>
-			<section class="col-sm-3">
-				<h2 class="section-title">Social</h2>
-				<ul class="nav">
-					<li><a href><i class="fa fa-facebook fa-fw"></i> Facebook</a></li>
-					<li><a href><i class="fa fa-youtube fa-fw"></i> YouTube</a></li>
-					<li><a href><i class="fa fa-github fa-fw"></i> GitHub</a></li>
-				</ul>
-			</section>
+			<?php
+				$theme_locations = get_nav_menu_locations();
+				for($i = 1; $i <= 2; $i++) {
+					$menu = get_term( $theme_locations['footer'.$i], 'nav_menu' );
+					if(!isset($menu->name))
+						continue;
+					$set = array(
+						'theme_location' => 'footer'.$i, 
+						'container' => 'div',
+						'menu_class' => 'nav',
+						'fallback_cb' => false,
+						'container_class' => 'col-xs-6 col-md-3',
+						'container_id' => 'footer-menu-'.$i,
+						'items_wrap'      => '
+							<h2 class="section-title">'.$menu->name.'</h2>
+							<ul id="%1$s" class="%2$s">
+							%3$s</ul>',
+					);
+					wp_nav_menu($set); 
+				}?>
+				<?php dynamic_sidebar('footer-sidebar'); ?>
 		</div>
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="logo smaller">
-					<img src="img/citronlab2_white.svg" alt="logo">
+					<img src="<?php bloginfo('template_url'); ?>/img/citronlab2_white.svg" alt="logo">
 				</div>
 			</div>
 			<div class="col-sm-6 text-right copy">
-				Copyright © <?php echo date('Y'); ?> CitronWeb. All Rights Reserved. Inspired by <a href="eclipse.org">Eclipse</a>
+				Copyright © <?php echo date('Y'); ?> CitronWeb. All Rights Reserved. Inspired by <a href="http://eclipse.org">Eclipse</a>
 			</div>		
 		</div>
 	</div>
