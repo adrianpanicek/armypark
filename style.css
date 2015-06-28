@@ -551,6 +551,12 @@ body > main .comments {
 body > main .comments img.avatar {
   width: 4.5em;
 }
+body > main .comments .media-body p {
+  margin: 0;
+}
+body > main .comments li.media {
+  margin: 0 0 10px;
+}
 body > main .comments ul.children .media {
   font-size: 0.9em;
   display: inline-block;

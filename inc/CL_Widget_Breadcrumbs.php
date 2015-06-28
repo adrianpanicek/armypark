@@ -13,13 +13,9 @@ class CL_Widget_Breadcrumbs extends WP_Widget {
 			itemprop="itemListElement" 
 			itemscope 
 			itemtype="http://schema.org/ListItem">
-				<?php if($link) {?>
-				<a itemprop="item" href="<?php echo $link; ?>">
-				<?php } ?>
+				<a itemprop="item" href="<?php echo ($link)? '//'.$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]:$link; ?>">
 					<span itemprop="name"><?php echo $name ?></span>
-				<?php if($link) {?>
 				</a>
-				<?php } ?>
 				<meta itemprop="position" content="<?php echo ++$this->iterator;?>" />
 		</li>
 <?php

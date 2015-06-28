@@ -1,7 +1,5 @@
 <?php
 get_header();
-?>
-<?php
 if(is_page()) {
 the_post();
 $errors = array(
@@ -14,10 +12,23 @@ $errors = array(
 <main>
 	<section class="breadcrumb-wrap">
 		<div class="container">
-			<ol class="breadcrumb">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Category</a></li>
-				<li class="active">Article</li>
+			<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+				<li	itemprop="itemListElement" 
+					itemscope 
+					itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="<?php get_home_url(); ?>">
+							<span itemprop="name">Home</span>
+						</a>
+						<meta itemprop="position" content="0" />
+				</li>
+				<li	itemprop="itemListElement" 
+					itemscope 
+					itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="<?php echo '//'.$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>">
+							<span itemprop="name">Login</span>
+						</a>
+						<meta itemprop="position" content="1" />
+				</li>
 			</ol>
 		</div>
 	</section>
