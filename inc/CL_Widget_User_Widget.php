@@ -32,7 +32,9 @@ class CL_Widget_User_Widget extends WP_Widget {
 								<a href="<?php echo get_author_posts_url($user->ID);?>"><?php echo $user->display_name;?></a>
 							</div>
 							<div class="role">
-								<?php echo implode(', ', $user->roles); ?>
+								<?php
+									echo implode(', ', translate_roles($user->roles)); 
+								?>
 							</div>
 						</div>
 						<hr class="visible-xs">

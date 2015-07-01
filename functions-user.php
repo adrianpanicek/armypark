@@ -98,6 +98,19 @@ function cl_user_shortcode($args, $content="") {
 }
 add_shortcode('cl_user', 'cl_user_shortcode');
 
+function translate_roles($roles) {
+    $role_translate = array(
+        'administrator' => 'Admin',
+        'moderator' => 'Moderator'
+    );
+    $ret = array();
+    foreach($roles as $role) {
+        if(isset($role_translate[$role]))
+            $ret[$role] = $role_translate[$role];
+    }
+    return $ret;
+}
+
 class StudentRPG {
 
     const EXP_META_NAME = 'cl_exp';
