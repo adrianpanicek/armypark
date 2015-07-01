@@ -256,5 +256,16 @@ function cl_comment_form_fields($fields) {
 }
 add_filter('comment_form_default_fields', 'cl_comment_form_fields');
 
+function cl_archives_shortcode($atts) {
+	$att = '';
+	foreach($atts as $key => $at) {
+		if($att != '')
+			$att .= '&';
+		$att .= $key.'='.$at;
+	}
+    return wp_get_archives($att);
+}
+add_shortcode( 'archives', 'cl_archives_shortcode' );
+
 include(__DIR__.'/functions-ide.php');
 include(__DIR__.'/functions-user.php');
