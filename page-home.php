@@ -79,12 +79,12 @@ get_header();
 				<section class="row offset elegant">
 					<div class="triangle visible-lg"></div>
 					<div class="col-sm-7">
-						<h3>Vysoký plat bez Ing.</h3>
-						<p>IT je do budúcnosti najslubnejšie pracovné odvetie. Staňte sa programátorom alebo designerom bez hlbokej znalosti matematiky alebo zdĺhavým študovaním nepochopiteľných materiálov všade na internete. Nechápete ? My vám vysvetlíme ako to funguje.</p>
+						<h3>Prestaňte investovať do vzdelania, vzdelávajte sa !</h3>
+						<p>V každom z nás drieme túžba po tom, vytvoriť niečo na čo môžete byť hrdý a čo vám prinesie uznanie. Vzdelanie a múdrosť nikomu nepatrí a pritom väčšina ludí berie edukačný trh ako veľmi dobrý biznis. CitronLab je portál vytvorený ajťákmi, pre ajťákov. Či už snívate o vlastnom projekte, chcete poradiť, alebo sa len zaujímate o novinky vo svete IT, ste tu správne.</p>
 						<ul class="list-inline list-checkmark">
 							<li>
 								<i class="fa fa-angle-double-right orange fa-fw"></i>
-								<a href="#">Pozrieť kurzy</a>
+								<a href="<?php $post = get_page_by_path('welcome-home', OBJECT, 'post');echo get_post_permalink($post->ID); ?>">Celý článok</a>
 							</li>
 						</ul>
 					</div>
@@ -107,7 +107,7 @@ get_header();
 					</div>
 					<div class="col-sm-7">
 						<h3>Skroťte IT</h3>
-						<p>Chcete sa naučiť postavať robota ? Naprogramovať hodiny ? Vytvárať weby ? Programovať hry ? Chcete sa živiť tvorením a spoznávať reklamy na svoje reklamy po celom slovensku ? Alebo po celom svete ? <strong>Naučíme vás to.</strong></p>
+						<p>Chcete sa naučiť postaviť robota ? Naprogramovať hodiny ? Vytvárať weby ? Programovať hry ? Chcete sa živiť tvorením a spoznávať reklamy na svoje produkty po celom slovensku ? Alebo po celom svete ? <strong>Naučíme vás to.</strong></p>
 						<ul class="list-inline list-checkmark">
 							<li>
 								<i class="fa fa-angle-double-right orange fa-fw"></i>
@@ -127,14 +127,16 @@ get_header();
 				<section class="row offset elegant">
 					<div class="triangle triangle-charcoal visible-lg"></div>
 					<div class="col-md-7">
-						<h3>Projekty študentov</h3>
-						<p>Chcete byť navždy zapísaný na stene slávy pokrokov na CitronLabe ? Pochváliť sa svojím kamarátom za projekt na ktorý ste hrdý ? Napíšte si o konzultáciu.</p>
-						<ul class="list-inline list-checkmark">
-							<li>
-								<i class="fa fa-angle-double-right orange fa-fw"></i>
-								<a href="#">Cesta k legende</a>
-							</li>
-						</ul>
+						<h3>Sponzor</h3>
+							<!-- Sponsor -->
+							<ins class="adsbygoogle"
+							     style="display:block"
+							     data-ad-client="ca-pub-2771839646741592"
+							     data-ad-slot="5711419865"
+							     data-ad-format="auto"></ins>
+							<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
 					</div>
 				</section>
 			</div>

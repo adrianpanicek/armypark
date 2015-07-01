@@ -27,8 +27,8 @@ function initialize_ace() {
 		editor.renderer.setShowGutter(false);
 		console.log(editor);
 		editor.setTheme("ace/theme/monokai");
-		editor.getSession().setValue(textarea.html());
 		editor.getSession().setMode("ace/mode/" + mode);
+		editor.getSession().setValue(textarea.val());
 
 		jQuery('form#post').submit(function(event) {
 			textarea.html(editor.getSession().getValue());
