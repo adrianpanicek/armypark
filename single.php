@@ -53,6 +53,7 @@ dynamic_sidebar('breadcrumb'); ?>
 				</div>
 				<div class="col-md-3">
 					<?php dynamic_sidebar('post-meta'); ?>
+					<?php dynamic_sidebar('post_category'); ?>
 				</div>
 				<div class="clearfix"></div>
 			</article>

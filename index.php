@@ -53,7 +53,7 @@ get_header();
 ?>
 		</section>
 	</div>
-</main>
+	</main>
 <?php
 get_footer();
 ?>
