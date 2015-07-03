@@ -18,7 +18,7 @@ dynamic_sidebar('breadcrumb'); ?>
 							<i class="fa fa-user"></i> <a href=<?php the_author_link(); ?> class="stealth"><?php the_author(); ?></a>
 						</span>
 						<span class="small">
-							<i class="fa fa-inbox"></i> <?php the_category(',');?>
+							<i class="fa fa-inbox"></i> <?php the_category(', ');?>
 						</span>
 						<span class="small">
 							<i class="fa fa-comments"></i> <?php comments_number(); ?>

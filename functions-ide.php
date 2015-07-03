@@ -57,7 +57,7 @@ function cl_code_meta_box_callback($post) {
 		<h3>Snippet: ID <?php echo $key;?></h3>
 		<?php echo the_language_select($key, $lang); ?>
 		<div class="code-snippet">
-			<textarea data-editor="<?php echo $lang ?>" name="cl_editor_<?php echo $key; ?>" cols="45" class="editor"><?php echo $text; ?></textarea>
+			<textarea data-editor="<?php echo $lang ?>" name="cl_editor_<?php echo $key; ?>" cols="45" class="editor"><?php echo esc_textarea($text); ?></textarea>
 		</div>	
 <?php
 		}
@@ -134,7 +134,7 @@ function cl_register_code_shortcode($atts, $content = null) {
 	global $post;
 	global $hljs_iterator;
 	$res = '';
-	if($content == null) {
+	if($content == null || strlen(trim($content)) <= 0) {
 		if(isset($atts['id'])) {
 			$res = get_post_meta($post->ID, 'cl_code_meta_box');
 			$res = $res[0][$atts['id']];
@@ -147,7 +147,7 @@ function cl_register_code_shortcode($atts, $content = null) {
 			foreach($snippets as $key => $snippet) {
 				if($hljs_iterator == $l_iterator) {
 					$text = $snippet['text'];
-					$lang = $snippet['text'];
+					$lang = $snippet['lang'];
 					$hljs_iterator++;
 					break;
 				}
@@ -161,11 +161,22 @@ function cl_register_code_shortcode($atts, $content = null) {
 	}
 	$lang = cl_translate_ace2hljs_lang($lang);
 	ob_start();?>
-		<pre><code class="<?php echo $lang; ?>"><?php echo $text; ?></code></pre>
+		<pre><code class="<?php echo $lang; ?>"><?php echo esc_html($text); ?></code></pre>
 <?php $res = ob_get_clean();
 	return $res;
+	return $content;
 }
 add_shortcode('code', 'cl_register_code_shortcode');
+
+function cl_register_c_shortcode($atts, $content = null) {
+	$lang = (isset($atts['lang']))? $atts['lang'] : 'php';
+	$lang = cl_translate_ace2hljs_lang($lang);
+	ob_start();
+		?><pre><code class="<?php echo $lang; ?>"><?php echo esc_html($content); ?></code></pre><?php
+	$res = ob_get_clean();
+	return $res;
+}
+add_shortcode('c', 'cl_register_c_shortcode');
 
 function cl_translate_ace2hljs_lang($lang) {
 	switch($lang) {
