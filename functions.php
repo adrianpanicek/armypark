@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', '1');
 require_once(__DIR__.'/inc/CL_Widget_Recent_Posts.php');
 require_once(__DIR__.'/inc/CL_Widget_Links.php');
 require_once(__DIR__.'/inc/CL_Widget_Breadcrumbs.php');
@@ -276,4 +277,4 @@ add_shortcode( 'archives', 'cl_archives_shortcode' );
 
 include(__DIR__.'/functions-ide.php');
 include(__DIR__.'/functions-user.php');
-ini_set('display_errors', '1');
+
