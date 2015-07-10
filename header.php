@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Adrián Paníček">
+		<meta name="description" content="Útočisko IT nadšencov a online univerzita ktorá ponúka bezplatné
+online kurzy programovania a hobby elektroniky. Pozrite sa čo vám môžme ponúknuť...">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript,Programovanie,Programovanie hier,Lekcie Programovania,PHP,SQL">
 		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico" type="image/x-icon">
 		<script>
