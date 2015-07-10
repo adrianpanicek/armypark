@@ -84,7 +84,7 @@ get_header();
 						<ul class="list-inline list-checkmark">
 							<li>
 								<i class="fa fa-angle-double-right orange fa-fw"></i>
-								<a href="<?php $post = get_page_by_path('welcome-home', OBJECT, 'post');echo get_post_permalink($post->ID); ?>">Celý článok</a>
+								<a href="<?php $post = get_page_by_path('welcome-home', OBJECT, 'post');echo esc_url(get_post_permalink($post->ID)); ?>">Celý článok</a>
 							</li>
 						</ul>
 					</div>

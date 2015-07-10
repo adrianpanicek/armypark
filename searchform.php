@@ -1,4 +1,4 @@
-<form action method="GET">
+<form action="#" method="GET">
 	<div class="input-group input-group-sm search">
 		<input type="text" id="search" class="form-control" name="s" placeholder="Search" value="<?php the_search_query(); ?>">
 		<span class="input-group-btn">

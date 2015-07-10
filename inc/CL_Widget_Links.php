@@ -44,6 +44,7 @@ class CL_Widget_Links extends WP_Widget {
 <?php
 		}
 		endif;
+		echo $args['before_widget'];
 
 	}
 	/**

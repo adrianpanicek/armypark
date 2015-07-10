@@ -276,3 +276,4 @@ add_shortcode( 'archives', 'cl_archives_shortcode' );
 
 include(__DIR__.'/functions-ide.php');
 include(__DIR__.'/functions-user.php');
+ini_set('display_errors', '1');

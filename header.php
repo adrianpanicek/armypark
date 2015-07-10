@@ -56,16 +56,16 @@
 				</div><div class="right">
 					<?php dynamic_sidebar('header-search-bar'); ?><div class="btn-wrapper">
 						<div class="btn-group" role="group">
-							<button class="btn btn-lg btn-warning lighter">
-								<a href="<?php echo esc_url(get_permalink(get_page_by_title('login')));?>">
+							<a href="<?php echo esc_url(get_permalink(get_page_by_title('login')));?>">
+								<button class="btn btn-lg btn-warning lighter">
 									<i class="fa fa-user-plus fa-fw"></i> Join
-								</a>
-							</button>
-							<button class="btn btn-lg btn-warning">
-								<a href="<?php echo esc_url(get_permalink(get_page_by_title('login')));?>">
+								</button>
+							</a>
+							<a href="<?php echo esc_url(get_permalink(get_page_by_title('login')));?>">
+								<button class="btn btn-lg btn-warning">
 									Log In <i class="fa fa-user fa-fw"></i>
-								</a>
-							</button>
+								</button>
+							</a>
 						</div>
 					</div>
 				<div class="clearfix"></div>
