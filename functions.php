@@ -23,7 +23,6 @@ function cl_admin_scripts() {
 		wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/js/jquery.min.js');
 		wp_enqueue_script('ace', get_stylesheet_directory_uri() . '/js/ace/ace.js', array('jquery'));
 		wp_enqueue_script('main_admin', get_stylesheet_directory_uri() . '/js/main_admin.js', array('ace'));
-		wp_enqueue_script('retina', get_stylesheet_directory_uri() . '/js/retina.min.js', array('retina'));
 	}
 }
 add_action('admin_enqueue_scripts', 'cl_admin_scripts');

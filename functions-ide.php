@@ -42,7 +42,7 @@ function cl_code_meta_box() {
 		$o++;
 	}
 }
-add_action('add_meta_boxes', 'cl_code_meta_box');
+//add_action('add_meta_boxes', 'cl_code_meta_box');
 
 function cl_code_meta_box_callback($post) {
 	$snippets = get_post_meta($post->ID, 'cl_code_meta_box');
