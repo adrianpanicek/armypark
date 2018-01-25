@@ -37,11 +37,13 @@ function cl_styles() {
 	wp_register_style('font-awesome.min', get_template_directory_uri() . '/css/font-awesome.min.css' );
 	wp_register_style('bootstrap-theme.min', get_template_directory_uri() . '/css/bootstrap-theme.min.css' );
 	wp_register_style('monokai-sublime', get_template_directory_uri() . '/css/monokai_sublime.css' );
+    wp_register_style('instagram', get_template_directory_uri() . '/css/instagram.min.css' );
 
 	wp_enqueue_style('monokai-sublime');
 	wp_enqueue_style('bootstrap.min');
 	wp_enqueue_style('bootstrap-theme.min');
 	wp_enqueue_style('font-awesome.min');
+    wp_enqueue_style('instagram');
 	wp_enqueue_style('style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'cl_styles');
