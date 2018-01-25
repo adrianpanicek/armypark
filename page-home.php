@@ -33,8 +33,8 @@ get_header();
 				<section class="row offset elegant">
 					<div class="col-sm-5">
 						<h3>PRIEBEH HRY</h3>
-						<p>Máme pre Vás pripravené množstvo scenárov, v ktorých má každý člen tímu svoju úlohu. Možnosti sú neobmedzené a pre to Vás táto hra neprestane baviť.
-							Teraz môže hrať viac ako 20 hráčov naraz .
+						<p>Máme pre Vás pripravené množstvo scenárov, v ktorých má každý člen tímu svoju úlohu. Možnosti sú neobmedzené a pre to Vás táto hra neprestane baviť.<br>
+							<strong>Teraz môže hrať 16 hráčov naraz!</strong><br>
 							Pri počte hráčov do 10 vás môžeme spojiť s ďalšími záujemcami o hru, hra sa tak stane atraktívnejšia, predsa čím viac ľudí tým väčšia zábava.</p>
 					</div>
 				</section>
