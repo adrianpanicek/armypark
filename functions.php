@@ -11,6 +11,11 @@ require_once(__DIR__.'/inc/tax-meta/tax-meta-class.php');
 add_theme_support( 'post-thumbnails' );
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+	show_admin_bar(false);
+}
+
 function cl_scripts() {
 	wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/js/jquery.min.js');
 	wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array('jquery'));

@@ -1,0 +1,12 @@
+{
+    "name": "adrian.panicek/armypark",
+    "description": "ArmyPark theme",
+    "type": "project",
+    "authors": [
+        {
+            "name": "adrian.panicek",
+            "email": "adrian@panicek.sk"
+        }
+    ],
+    "require": {}
+}

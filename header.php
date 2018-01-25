@@ -4,9 +4,8 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Adrián Paníček">
-		<meta name="description" content="Útočisko IT nadšencov a online univerzita ktorá ponúka bezplatné
-online kurzy programovania a hobby elektroniky. Pozrite sa čo vám môžme ponúknuť...">
-		<meta name="keywords" content="HTML,CSS,XML,JavaScript,Programovanie,Programovanie hier,Lekcie Programovania,PHP,SQL">
+		<meta name="description" content="">
+		<meta name="keywords" content="Airsoft,Lasertag,Lasergame,laser game,laserwars">
 		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico" type="image/x-icon">
 		<script>
@@ -22,54 +21,32 @@ online kurzy programovania a hobby elektroniky. Pozrite sa čo vám môžme pon�
 		<?php wp_head(); ?>
 	</head>
 <body <?php body_class(); ?>>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="left">
-					<div class="logo">
-						<a href="<?php echo home_url('/'); ?>">
-							<img src="<?php bloginfo('template_url'); ?>/img/citronlab2.svg" alt="logo">
-						</a>
-						<div class="clearfix"></div>
-					</div>
-					<?php if(is_page()) {?>
-					<h1><?php the_title(); ?></h1>
-					<?php } ?>
-					<nav class="navbar">
-						<div class="navbar-header">
-							<button type="button" 
-								class="navbar-toggle collapsed" 
-								data-toggle="collapse" 
-								data-target="#menu-menu">
-								<i class="fa fa-tasks"></i>
-							</button>
-						</div>
-						<?php 
-						$set = array(
-							'theme_location' => 'header',
-							'fallback_cb' => false,
-							'container' => '',
-							'menu_class' => 'nav navbar-nav',
-							'menu_id' => '',
-							'container_class' => 'collapse navbar-collapse',
-							'container_id' => 'main-navbar',
-						);
-						wp_nav_menu($set); ?>
-					</nav>
-
-				</div><div class="right">
-					<?php dynamic_sidebar('header-search-bar'); ?><div class="btn-wrapper">
-						<div class="btn-group" role="group">
-							<a class="btn btn-lg btn-warning lighter" href="<?php echo esc_url(get_permalink(get_page_by_title('login')));?>">
-								<i class="fa fa-user-plus fa-fw"></i> Join
-							</a>
-							<a class="btn btn-lg btn-warning" href="<?php echo esc_url(get_permalink(get_page_by_title('login')));?>">
-								Log In <i class="fa fa-user fa-fw"></i>
-							</a>
-						</div>
-					</div>
+	<nav class="navbar">
+		<div class="navbar-brand">
+			<div class="logo">
+				<a href="<?php echo home_url('/'); ?>">
+					<img src="<?php bloginfo('template_url'); ?>/img/citronlab2.svg" alt="logo">
+				</a>
 				<div class="clearfix"></div>
-				</div>
 			</div>
 		</div>
-	</header>
+		<div class="navbar-header">
+			<button type="button"
+			        class="navbar-toggle collapsed"
+			        data-toggle="collapse"
+			        data-target="#menu-menu">
+				<i class="fa fa-tasks"></i>
+			</button>
+		</div>
+	    <?php
+	    $set = array(
+	        'theme_location' => 'header',
+	        'fallback_cb' => false,
+	        'container' => '',
+	        'menu_class' => 'nav navbar-nav',
+	        'menu_id' => '',
+	        'container_class' => 'collapse navbar-collapse',
+	        'container_id' => 'main-navbar',
+	    );
+	    wp_nav_menu($set); ?>
+	</nav>
